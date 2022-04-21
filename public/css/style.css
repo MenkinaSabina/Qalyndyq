@@ -1,0 +1,204 @@
+body {
+    --color: #222;
+    --color-background:#fce6a6;
+    --color-font-navbar: #946f03;
+    --color-font-navbar-hover: #2e2301;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+ h1 {
+     font-size: 50px;
+     line-height: 64px;
+     color: var(--color);
+ }
+ h2 {
+     font-size: 46px;
+     line-height: 54px;
+     color:var(--color);
+ }
+ h4 {
+     font-size: 20px;
+     color: var(--color);
+ }
+ h6 {
+     font-weight: 700;
+     font-size: 12px;
+ }
+ p {
+     font-size: 16px;
+     color: var(--color);
+     margin: 15px 0 20px 0;
+ }
+.section-p1 {
+    padding: 40px 80px;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+.logo {
+    object-fit:contain;
+    width:150px;
+    height:75px;
+}
+/* HEADER*/
+#header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: var(--color-background);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left:0;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+     list-style: none;
+     padding: 0 20px;
+     position: relative;
+ }
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-font-navbar);
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: var(--color-font-navbar-hover);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: var(--color-font-navbar-hover);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* HOME PAGE*/
+/*#hero{
+    background-image: url("img/oyu.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover ;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: var(--color-font-navbar-hover);
+}
+#hero button{
+    background-image: url("img/goldsign.png");
+    background-color: transparent;
+    color: var(--color-font-navbar-hover);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+
+}*/
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #c39304;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+}
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #fccc3d;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-font-navbar);
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: var(--color-background);
+    font-weight: 500;
+    color: var(--color-font-navbar);
+    border: 1px solid var(--color-font-navbar);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
